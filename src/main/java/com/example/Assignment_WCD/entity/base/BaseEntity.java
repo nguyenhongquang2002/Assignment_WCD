@@ -1,112 +1,91 @@
-package com.example.Assignment_WCD.entity;
+package com.example.Assignment_WCD.entity.base;
 
-import com.example.Assignment_WCD.entity.base.BaseEntity;
-import com.example.Assignment_WCD.entity.statusEnum.CategoryStatus;
+import com.example.Assignment_WCD.entity.statusEnum.FoodStatus;
 
 import java.time.LocalDateTime;
 
-public class Category extends BaseEntity {
-    private int id;
-    private String name;
-    private CategoryStatus status;
+public abstract class BaseEntity {
     public LocalDateTime createdAt;
     public LocalDateTime updatedAt;
     public LocalDateTime deletedAt;
     public int createdBy;
     public int updatedBy;
     public int deletedBy;
+    public FoodStatus status;
 
-    public Category(String name) {
-        this.id = id;
-        this.name = this.name;
-        this.status = status;
+    public BaseEntity() {
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+        this.deletedAt = LocalDateTime.now();
+        this.createdBy = 1;
+        this.updatedBy = 1;
+        this.deletedBy = 1;
+        this.status = FoodStatus.ACTIVE;
+    }
+
+    public BaseEntity(LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt, int createdBy, int updatedBy, int deletedBy, FoodStatus status) {
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
         this.deletedAt = deletedAt;
         this.createdBy = createdBy;
         this.updatedBy = updatedBy;
         this.deletedBy = deletedBy;
+        this.status = status;
     }
 
-    public Category(int id, String name) {
-    }
-
-    public Category(int id, String name, LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt, int createdBy, int updatedBy, int deletedBy, CategoryStatus categoryStatus) {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
     public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    @Override
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 
-    @Override
     public LocalDateTime getUpdatedAt() {
         return updatedAt;
     }
 
-    @Override
     public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
     }
 
-    @Override
     public LocalDateTime getDeletedAt() {
         return deletedAt;
     }
 
-    @Override
     public void setDeletedAt(LocalDateTime deletedAt) {
         this.deletedAt = deletedAt;
     }
 
-    @Override
     public int getCreatedBy() {
         return createdBy;
     }
 
-    @Override
     public void setCreatedBy(int createdBy) {
         this.createdBy = createdBy;
     }
 
-    @Override
     public int getUpdatedBy() {
         return updatedBy;
     }
 
-    @Override
     public void setUpdatedBy(int updatedBy) {
         this.updatedBy = updatedBy;
     }
 
-    @Override
     public int getDeletedBy() {
         return deletedBy;
     }
 
-    @Override
     public void setDeletedBy(int deletedBy) {
         this.deletedBy = deletedBy;
+    }
+
+    public FoodStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(FoodStatus status) {
+        this.status = status;
     }
 }

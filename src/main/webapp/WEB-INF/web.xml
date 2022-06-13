@@ -13,4 +13,128 @@
         <url-pattern>/admin</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>CreateFoodServlet</servlet-name>
+        <servlet-class>com.example.Assignment_WCD.controller.Food.CreateFoodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateFoodServlet</servlet-name>
+        <url-pattern>/admin/view/food/create.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateFoodServlet</servlet-name>
+        <servlet-class>com.example.Assignment_WCD.controller.Food.UpdateFoodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateFoodServlet</servlet-name>
+        <url-pattern>/admin/view/food/update.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListFoodServlet</servlet-name>
+        <servlet-class>com.example.Assignment_WCD.controller.Food.ListFoodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListFoodServlet</servlet-name>
+        <url-pattern>/admin/view/food/list.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteFoodServlet</servlet-name>
+        <servlet-class>com.example.Assignment_WCD.controller.Food.DeleteFoodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFoodServlet</servlet-name>
+        <url-pattern>/admin/view/food/delete.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateCategoryServlet</servlet-name>
+        <servlet-class>com.example.Assignment_WCD.controller.Category.CreateCategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateCategoryServlet</servlet-name>
+        <url-pattern>/admin/view/category/create.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateCategoryServlet</servlet-name>
+        <servlet-class>com.example.Assignment_WCD.controller.Category.UpdateCategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCategoryServlet</servlet-name>
+        <url-pattern>/admin/view/category/update.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListCategoryServlet</servlet-name>
+        <servlet-class>com.example.Assignment_WCD.controller.Category.ListCategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListCategoryServlet</servlet-name>
+        <url-pattern>/admin/view/category/list.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCategoryServlet</servlet-name>
+        <servlet-class>com.example.Assignment_WCD.controller.Category.DeleteCategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCategoryServlet</servlet-name>
+        <url-pattern>/admin/view/category/delete.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListFood</servlet-name>
+        <jsp-file>/admin/views/food/list.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListFood</servlet-name>
+        <url-pattern>/admin/food/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateFood</servlet-name>
+        <jsp-file>/admin/views/food/create.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateFood</servlet-name>
+        <url-pattern>/admin/food/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateFood</servlet-name>
+        <jsp-file>/admin/views/food/update.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateFood</servlet-name>
+        <url-pattern>/admin/food/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListCategory</servlet-name>
+        <jsp-file>/admin/views/category/list.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListCategory</servlet-name>
+        <url-pattern>/admin/category/list</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreateCategory</servlet-name>
+        <jsp-file>/admin/views/category/create.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateCategory</servlet-name>
+        <url-pattern>/admin/category/create</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdateCategory</servlet-name>
+        <jsp-file>/admin/views/category/update.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCategory</servlet-name>
+        <url-pattern>/admin/category/update</url-pattern>
+    </servlet-mapping>
+
 </web-app>
